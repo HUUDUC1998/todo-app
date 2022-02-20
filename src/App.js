@@ -54,7 +54,7 @@ function App() {
         <div className='container-btn'>
           <Button color='secondary' variant="outlined" onClick={clearBtn}>Clear All</Button>
         </div>
-        </div>
+      </div>
         <div className='list'>
           <ul>
               {jobs.map((job,index)=>{
