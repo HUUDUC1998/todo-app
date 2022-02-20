@@ -16,7 +16,7 @@ function App() {
       newItem.splice(item,1)
       localStorage.setItem('jobs',JSON.stringify(newItem))
       return newItem
-      })
+    })
   }
   const handle = () => {
     setJobs(prev=>{
@@ -37,11 +37,10 @@ function App() {
   }
   const handleFinish = (item) => {
     const lis = document.querySelector(".my-li-"+item)
-    console.log(lis);
     lis.classList.add('done')
     lis.classList.remove('my-li')
   }
- 
+
   return (
     <div className="App">
         <h1>My ToDo List</h1>
